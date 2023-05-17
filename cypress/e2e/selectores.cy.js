@@ -1,7 +1,8 @@
+/// <reference types="cypress" />
 describe('Selectores', () => {
 
     it("encontrar elementos web con cssSelector", () => {
-        cy.visit('');
+        cy.visit('https://pushing-front.vercel.app/');
         cy.get('button').should('exist');
         cy.get('[name="pass"]').should('exist');
         cy.get('#pass').should('exist');
